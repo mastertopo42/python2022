@@ -29,7 +29,7 @@ def collision(obj_db, mouse_butt, mouse_position):
     """
     mouse_butt += 1
     for itera in range(len(obj_db) - 1, -1, -1):
-        lenght = (obj_db[itera].pos[0] - mouse_position[0]) ** 2 + (obj_db[i].pos[1] - mouse_position[1])  # расстояние
+        lenght = (obj_db[itera].pos[0] - mouse_position[0]) ** 2 + (obj_db[itera].pos[1] - mouse_position[1])  # расстояние
         if lenght <= obj_db[itera].rad ** 2:
             global score
             score += obj_db[itera].score
